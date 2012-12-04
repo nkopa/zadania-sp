@@ -15,4 +15,4 @@ grep -l '^.\{8\}r' *
 grep bash /etc/passwd | wc -l
 
 #5
-grep [A-Z] plik.txt | grep 'I\{0,3\}X\{0,3\}[VLCMD]\?I\{0,3\}X\{0,3\}' | grep -v '[VLCMD]\{2,\}'
+grep 'I\{0,3\}X\{0,3\}[VLCMD]\?I\{0,3\}X\{0,3\}' | grep -v '[VLCMD]\{2,\}'
