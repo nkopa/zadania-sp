@@ -19,7 +19,16 @@ echo $wynik;
 
 function modulo {
 
+echo par1: $1 par2: $2 >&2
+echo obliczanie modulo >&2
+
+wynik=$(($1%$2))
+
+echo $wynik;
 }
 
 wynikPotegi=$(potega 3 4)
 echo wynikPotegi: $wynikPotegi
+
+wynikModulo=$(modulo $wynikPotegi 2)
+echo wynikModulo: $wynikModulo
